@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="twitterpost" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Twitter Post</name>
+	<description>Add a post to twitter button to set section edit pages.</description>
+	<repo type="github">https://github.com/pixelninja/twitterpost</repo>
+	<types>
+		<type>Third Party Integration</type>
+		<type>Workflow</type>
+	</types>
+	<authors>
+		<author>
+			<name github="pixelninja" symphony="touchstone">Phillip Gray</name>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.0.0" date="2015-05-17" min="2.6" />
+	</releases>
+</extension>
