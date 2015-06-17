@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
 	var target = $('#context .actions'),
-        li = $('<li />');
+        li = $('<li class="twitter_post_button" />');
         link = '<url here>';
 
     if ($('.field-entry_url').length) link = $('.field-entry_url').find('a').attr('href');

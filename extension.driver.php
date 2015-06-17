@@ -70,9 +70,10 @@ class Extension_TwitterPost extends Extension {
 	public function initialiseAdminPageHead($context) {
         $page = Administration::instance()->Page;
         $sections = Symphony::Configuration()->get('twitter-post');
+        $sections_array = explode(',', $sections['section']);
 
-        if(in_array($page->_context['section_handle'], $sections) && $page->_context['page'] === 'edit') {
-            
+        if(in_array($page->_context['section_handle'], $sections_array) && $page->_context['page'] === 'edit') {
+            $page->addStylesheetToHead(URL . '/extensions/twitterpost/assets/twitterpost.css', 'screen', 9001);
             $page->addScriptToHead('https://platform.twitter.com/widgets.js', 667);
             $page->addScriptToHead(URL . '/extensions/twitterpost/assets/twitterpost.js', 667);
         }
